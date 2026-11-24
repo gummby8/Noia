@@ -33,7 +33,9 @@ img, video { display: block; width: 100%; height: 100%; object-fit: cover; image
 .btn-grey { background: var(--line); color: #fff !important; box-shadow: inset 0 -4px 0 var(--panel); }
 
 /* Banner */
-.banner { position: relative; height: min(72vh, 720px); min-height: 420px; background: var(--panel); border-bottom: 3px solid var(--line); overflow: hidden; }
+.banner { background: var(--panel); border-bottom: 3px solid var(--line); }
+/* Always shows the whole 16:9 image/video: full width, but never taller than 85% of the screen */
+.banner-inner { width: min(100%, calc(85vh * 16 / 9)); aspect-ratio: 16 / 9; margin: 0 auto; overflow: hidden; }
 
 /* Sections */
 section.block { padding-top: 112px; }
