@@ -1,18 +1,286 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="noia.css">
-    <title>Noia MMORPG</title>
-    <meta name="description" content="Noia is an MMO that is currently in development">
-</head>
-    <body>
-    <h1>Noia Coming Soon!!</h1>
-    <p>The game is live!</p>
-    <p><a href="https://game.noia-online.com">Click here</a></p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noia Online — A Pixel Art MMORPG</title>
+<meta name="description" content="Noia Online is a 2.5D pixel art MMORPG. Battle monsters, delve into dungeons, forge your own weapons, and team up with friends.">
+<link rel="canonical" href="https://noia-online.com/">
 
-    <img src="images/noia.png" alt="Noia Guy" width="100px"/>
-    <p>Join The Discord!</p>
-    <a href="https://discord.gg/2FSC2yKGEd"> <img src="images/discord.png" width="48" height="48"></a>
-    <a href="https://www.youtube.com/@noiadev"> <img src="images/youtube.png" width="48" height="48"></a>
-    </body>
+<!-- Link previews (Discord, Twitter/X, Reddit, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noia Online">
+<meta property="og:title" content="Noia Online — A Pixel Art MMORPG">
+<meta property="og:description" content="Battle monsters, delve into dungeons, forge your own weapons, and team up with friends">
+<meta property="og:url" content="https://noia-online.com/">
+<meta property="og:image" content="https://noia-online.com/assets/media/banner/posters/banner.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">NOIA ONLINE</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="https://splosions-studios.itch.io/noia-online/devlog" target="_blank" rel="noopener">News</a>
+      <a href="https://discord.gg/2FSC2yKGEd" target="_blank" rel="noopener">Discord</a>
+      <a href="https://www.youtube.com/@noiadev" target="_blank" rel="noopener">YouTube</a>
+      <a href="meet-the-dev.html">Meet the Dev</a>
+      <a href="press.html">Press</a>
+      <!-- STEAM WISHLIST: uncomment when the Steam page is live
+      <a class="btn btn-grey" href="STEAM-STORE-URL">Wishlist on Steam</a>
+      -->
+      <a class="btn btn-gold" href="https://splosions-studios.itch.io/noia-online" target="_blank" rel="noopener">Play Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- BANNER: assets/media/banner/ -->
+  <div class="banner">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/media/banner/posters/banner.png" aria-hidden="true">
+      <source src="assets/media/banner/mp4/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- THE WORLD: assets/media/world/ -->
+  <section class="block wrap" id="world">
+    <div class="intro">
+      <h1>NOIA ONLINE · A PIXEL ART MMORPG</h1>
+      <p class="tagline">A meteor streaks across the sky, ferrying a being of change to the world of Noia.<br>That being is you.</p>
+      <p class="lead">Battle monsters, delve into dungeons, and forge your own weapons. Gather friends into a guild and take on foes no one could face alone.</p>
+    </div>
+
+    <h2>The World</h2>
+    <div class="gallery" data-section="world">
+      <div class="viewer">
+        <video muted loop playsinline preload="none" poster="assets/media/world/posters/forest.png">
+          <source src="assets/media/world/mp4/forest.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="caption" aria-live="polite">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-pressed="true" data-item="forest" data-title="Forest" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/forest.png" alt="" loading="lazy"></div><span>Forest</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="underworld" data-title="Underworld" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/underworld.png" alt="" loading="lazy"></div><span>Underworld</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="tynsdale" data-title="Tynsdale" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/tynsdale.png" alt="" loading="lazy"></div><span>Tynsdale</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="mushroom-caves" data-title="Mushroom Caves" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/mushroom-caves.png" alt="" loading="lazy"></div><span>Mushroom Caves</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="desert" data-title="Desert" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/desert.png" alt="" loading="lazy"></div><span>Desert</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="old-forest" data-title="Old Forest" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/old-forest.png" alt="" loading="lazy"></div><span>Old Forest</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="ocean-shoals" data-title="Ocean Shoals" data-desc="[One-line description]">
+          <div class="thumb-img"><img src="assets/media/world/thumbnails/ocean-shoals.png" alt="" loading="lazy"></div><span>Ocean Shoals</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES: assets/media/classes/ (16:9) -->
+  <section class="block wrap" id="classes">
+    <h2>Classes</h2>
+    <div class="gallery" data-section="classes">
+      <div class="class-stage">
+        <div class="viewer">
+          <video muted loop playsinline preload="none" poster="assets/media/classes/posters/tank.png">
+            <source src="assets/media/classes/mp4/tank.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="caption" aria-live="polite">
+          <div class="weapon"></div>
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-pressed="true" data-item="tank" data-title="Tank" data-weapon="SWORD &amp; SHIELD" data-desc="Protect those you care about as an unmovable shield.
+
+Useing a sword and shield, the tank uses stoneskin to block all damage and build Aegis stacks in order to control the battlefield.">
+          <div class="thumb-img"><img src="assets/media/classes/thumbnails/tank.png" alt="" loading="lazy"></div><span>Tank</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="ranger" data-title="Ranger" data-weapon="BOW &amp; QUIVER" data-desc="Sting and Move.
+		
+		The cunning ranger keeps up a steady stream of damage firing additional arrows and gaining momentum with each shot.">
+          <div class="thumb-img"><img src="assets/media/classes/thumbnails/ranger.png" alt="" loading="lazy"></div><span>Ranger</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="mage" data-title="Mage" data-weapon="WAND &amp; TOME" data-desc="I didn't ask how big the room is...
+		
+		The mage does not concern themselves with cardio. Channeling the elements with devastating efficiency, the enemy is dead long before they ever get close.">
+          <div class="thumb-img"><img src="assets/media/classes/thumbnails/mage.png" alt="" loading="lazy"></div><span>Mage</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="healer" data-title="Healer" data-weapon="STAFF &amp; SYMBOL" data-desc="I can do this all day.
+		
+		Use the power of light to mend your allies and maim your enemies. Where there is a healer there is hope, and the battle will be won.">
+          <div class="thumb-img"><img src="assets/media/classes/thumbnails/healer.png" alt="" loading="lazy"></div><span>Healer</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUNGEONS & BOSSES: assets/media/dungeons/ -->
+  <section class="block wrap" id="dungeons">
+    <h2>Dungeons &amp; Bosses</h2>
+    <p class="section-desc">Multi-phase bosses found out in the world and group dungeons that reward a coordinated party.</p>
+    <div class="gallery" data-section="dungeons">
+      <div class="viewer">
+        <video muted loop playsinline preload="none" poster="assets/media/dungeons/posters/the-hive.png">
+          <source src="assets/media/dungeons/mp4/the-hive.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="caption" aria-live="polite">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-pressed="true" data-item="the-hive" data-title="The Hive" data-desc="The Bees of the Hive have become increasingly agressive lately.">
+          <div class="thumb-img"><img src="assets/media/dungeons/thumbnails/the-hive.png" alt="" loading="lazy"></div><span>The Hive</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="haunted-mines" data-title="Haunted Mines" data-desc="Once the heart of industry in Noia, now controlled by a spitefull poltergeist.">
+          <div class="thumb-img"><img src="assets/media/dungeons/thumbnails/haunted-mines.png" alt="" loading="lazy"></div><span>Haunted Mines</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="catacombs" data-title="Catacombs" data-desc="I told you there was a spring down here...now how to we get back out?">
+          <div class="thumb-img"><img src="assets/media/dungeons/thumbnails/catacombs.png" alt="" loading="lazy"></div><span>Catacombs</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="burrowyrm-matriarch" data-title="Burrowyrm Matriarch" data-desc="The Queen of the Burrowyrms is very protective of her brood.">
+          <div class="thumb-img"><img src="assets/media/dungeons/thumbnails/burrowyrm-matriarch.png" alt="" loading="lazy"></div><span>Burrowyrm Matriarch</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="antlion" data-title="Antlion" data-desc="Scourge of the desert. Maybe it can be lured out into the open.">
+          <div class="thumb-img"><img src="assets/media/dungeons/thumbnails/antlion.png" alt="" loading="lazy"></div><span>Antlion</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFTING & GEAR: assets/media/crafting/ -->
+  <section class="block wrap" id="crafting">
+    <h2>Crafting &amp; Gear</h2>
+    <p class="section-desc">Find recipe books, unlock crafting stations, and craft your own armor and weapons.</p>
+    <div class="gallery" data-section="crafting">
+      <div class="viewer">
+        <video muted loop playsinline preload="none" poster="assets/media/crafting/posters/recipe-books.png">
+          <source src="assets/media/crafting/mp4/recipe-books.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="caption" aria-live="polite">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-pressed="true" data-item="recipe-books" data-title="Recipe Books" data-desc="Find and read recipe books to learn new crafts.">
+          <div class="thumb-img"><img src="assets/media/crafting/thumbnails/recipe-books.png" alt="" loading="lazy"></div><span>Recipe Books</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="crafting-stations" data-title="Crafting Stations" data-desc="Unlock new stations, craft new equipment, tastier food, and the strongest potions.">
+          <div class="thumb-img"><img src="assets/media/crafting/thumbnails/crafting-stations.png" alt="" loading="lazy"></div><span>Crafting Stations</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="armor-sets" data-title="Armor Sets" data-desc="Every set of armor has its own unique effect. Choose the set that bests suits you.">
+          <div class="thumb-img"><img src="assets/media/crafting/thumbnails/armor-sets.png" alt="" loading="lazy"></div><span>Armor Sets</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="weapon-skills" data-title="Weapon Skills" data-desc="Each weapon comes with its own unique weapon skill to enhance your playstyle">
+          <div class="thumb-img"><img src="assets/media/crafting/thumbnails/weapon-skills.png" alt="" loading="lazy"></div><span>Weapon Skills</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE IN NOIA: assets/media/life/ -->
+  <section class="block wrap" id="life">
+    <h2>Life in Noia</h2>
+    <div class="gallery" data-section="life">
+      <div class="viewer">
+        <video muted loop playsinline preload="none" poster="assets/media/life/posters/player-houses.png">
+          <source src="assets/media/life/mp4/player-houses.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="caption" aria-live="polite">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-pressed="true" data-item="player-houses" data-title="Player Houses" data-desc="Decorate your own cozy home">
+          <div class="thumb-img"><img src="assets/media/life/thumbnails/player-houses.png" alt="" loading="lazy"></div><span>Player Houses</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="pets" data-title="Pets" data-desc="Pets keep you company, and also loot your enemies">
+          <div class="thumb-img"><img src="assets/media/life/thumbnails/pets.png" alt="" loading="lazy"></div><span>Pets</span></button>
+        <button class="thumb" type="button" aria-pressed="false" data-item="cosmetics" data-title="Cosmetics" data-desc="Be who you want to be">
+          <div class="thumb-img"><img src="assets/media/life/thumbnails/cosmetics.png" alt="" loading="lazy"></div><span>Cosmetics</span></button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© <span id="year">2026</span> Splosions Studios · noia-online.com</div>
+    <nav aria-label="Footer">
+      <a href="press.html">Press Kit</a>
+      <a href="#">Contact</a>    <!-- TODO -->
+      <a href="#">Privacy</a>    <!-- TODO -->
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const media = (section, folder, item, ext) => `assets/media/${section}/${folder}/${item}.${ext}`;
+
+  // Plays a video only while it is on screen; with reduced motion it stays on its poster.
+  const visible = new WeakMap();
+  const tryPlay = (video) => {
+    if (reduceMotion || !visible.get(video)) return;
+    const p = video.play();
+    if (p) p.catch(() => {});
+  };
+  const observer = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      visible.set(e.target, e.isIntersecting);
+      if (e.isIntersecting) tryPlay(e.target); else e.target.pause();
+    }
+  }, { threshold: 0.25 });
+  document.querySelectorAll('video').forEach((v) => {
+    if (reduceMotion) { v.removeAttribute('autoplay'); v.pause(); }
+    observer.observe(v);
+  });
+
+  // Galleries: clicking a thumbnail swaps the large viewer.
+  document.querySelectorAll('.gallery').forEach((gallery) => {
+    const section = gallery.dataset.section;
+    const video = gallery.querySelector('.viewer video');
+    const title = gallery.querySelector('.caption h3');
+    const desc = gallery.querySelector('.caption p');
+    const weapon = gallery.querySelector('.caption .weapon');
+    const thumbs = gallery.querySelectorAll('.thumb');
+
+    // Captions come from the thumbnail's data-title / data-desc / data-weapon.
+    // A blank line inside data-desc shows as a paragraph break.
+    const showText = (btn) => {
+      title.textContent = btn.dataset.title;
+      desc.textContent = btn.dataset.desc;
+      if (weapon) weapon.textContent = btn.dataset.weapon || '';
+    };
+
+    thumbs.forEach((btn) => btn.addEventListener('click', () => {
+      if (btn.getAttribute('aria-pressed') === 'true') return;
+      thumbs.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+
+      const item = btn.dataset.item;
+      video.pause();
+      video.poster = media(section, 'posters', item, 'png');
+      video.querySelector('source').src = media(section, 'mp4', item, 'mp4');
+      video.load();
+      tryPlay(video);
+
+      showText(btn);
+    }));
+
+    // Fill the caption from whichever thumbnail starts selected.
+    const first = gallery.querySelector('.thumb[aria-pressed="true"]') || thumbs[0];
+    if (first) showText(first);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
 </html>
